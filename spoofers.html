@@ -3,25 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boltware Checkout</title>
+    <title>Stripe Pricing Table</title>
 </head>
 <body>
     <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-
-    <!-- First Stripe Pricing Table -->
     <stripe-pricing-table 
-        pricing-table-id="prctbl_1QnoUyGA8ciK0PY2fsxpWJTM"
+        pricing-table-id="prctbl_1QnnxGGA8ciK0PY2l49qdEdz"
         publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
     </stripe-pricing-table>
-
-    <script>
-        // Wait for 500ms before loading the second pricing table
-        setTimeout(function() {
-            const secondTable = document.createElement('stripe-pricing-table');
-            secondTable.setAttribute('pricing-table-id', 'prctbl_1QnnxGGA8ciK0PY2l49qdEdz');
-            secondTable.setAttribute('publishable-key', 'pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn');
-            document.body.appendChild(secondTable);
-        }, 500); // Delay of 500ms (half a second)
-    </script>
 </body>
 </html>
