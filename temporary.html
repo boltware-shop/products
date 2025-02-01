@@ -5,25 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stripe Pricing Table</title>
     <style>
+        /* Ensure the page takes up the full viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
         body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            width: 100vw;
-            margin: 0;
-            overflow: hidden;  /* Prevents scrolling */
+            background-color: #f4f4f4;
+            overflow: hidden; /* Prevent scrolling */
         }
+
         stripe-pricing-table {
-            max-width: 100%;  /* Ensures it doesn't overflow horizontally */
+            max-width: 100%;
+            max-height: 100%;
         }
     </style>
 </head>
 <body>
+    <!-- Stripe script to load the pricing table -->
     <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-    <Boltware-Temporary-Spoofer 
+    <stripe-pricing-table 
         pricing-table-id="prctbl_1QnnxGGA8ciK0PY2l49qdEdz"
         publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
-    </Boltware-Temporary-Spoofer>
+    </stripe-pricing-table>
 </body>
 </html>
