@@ -14,29 +14,68 @@
             align-items: center;  /* Vertically centers */
             background-color: #f4f4f4;
             overflow: hidden;  /* Prevent scrolling */
-            flex-direction: column;  /* Stack the pricing tables vertically */
+        }
+
+        .pricing-container {
+            display: flex;
+            flex-wrap: wrap;  /* Allow tables to wrap to the next row */
+            justify-content: center;  /* Horizontally center the rows */
+            gap: 20px;  /* Space between tables */
+            max-width: 90%;  /* Limit the container's width */
         }
 
         stripe-pricing-table {
-            max-width: 100%;  /* Prevent overflow horizontally */
+            max-width: 200px;  /* Set the width of each table */
             max-height: 100%; /* Prevent overflow vertically */
-            margin: 20px; /* Adds space between the two tables */
         }
     </style>
 </head>
 <body>
     <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
     
-    <!-- First Pricing Table -->
-    <stripe-pricing-table 
-        pricing-table-id="prctbl_1QnnxGGA8ciK0PY2l49qdEdz"
-        publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
-    </stripe-pricing-table>
+    <!-- Pricing Tables Container -->
+    <div class="pricing-container">
+        <!-- First row (4 tables) -->
+        <stripe-pricing-table 
+            pricing-table-id="prctbl_1QnnxGGA8ciK0PY2l49qdEdz"
+            publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
+        </stripe-pricing-table>
+        
+        <stripe-pricing-table 
+            pricing-table-id="prctbl_1QnoUyGA8ciK0PY2fsxpWJTM"
+            publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
+        </stripe-pricing-table>
 
-    <!-- Second Pricing Table -->
-    <stripe-pricing-table 
-        pricing-table-id="prctbl_1QnoUyGA8ciK0PY2fsxpWJTM"
-        publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
-    </stripe-pricing-table>
+        <stripe-pricing-table 
+            pricing-table-id="prctbl_1Qno7yGA8ciK0PY2yfJkiJTM"
+            publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
+        </stripe-pricing-table>
+        
+        <stripe-pricing-table 
+            pricing-table-id="prctbl_1Qno2zGA8ciK0PY2yFnpJK0K"
+            publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
+        </stripe-pricing-table>
+
+        <!-- Second row (4 tables) -->
+        <stripe-pricing-table 
+            pricing-table-id="prctbl_1Qno3zGA8ciK0PY2tIkmJB01"
+            publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
+        </stripe-pricing-table>
+        
+        <stripe-pricing-table 
+            pricing-table-id="prctbl_1Qno8yGA8ciK0PY2xE3p8JbM"
+            publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
+        </stripe-pricing-table>
+
+        <stripe-pricing-table 
+            pricing-table-id="prctbl_1Qno4zGA8ciK0PY2fHs2kC50"
+            publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
+        </stripe-pricing-table>
+        
+        <stripe-pricing-table 
+            pricing-table-id="prctbl_1Qno1zGA8ciK0PY2u3dWljB0"
+            publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
+        </stripe-pricing-table>
+    </div>
 </body>
 </html>
