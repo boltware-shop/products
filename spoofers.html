@@ -4,70 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boltware Checkout</title>
-    <style>
-        /* Ensure the page takes up the full viewport and prevent scrolling */
-        html, body {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            justify-content: center;  /* Horizontally centers */
-            align-items: center;  /* Vertically centers */
-            background-color: #f4f4f4;
-            overflow: hidden;  /* Prevent scrolling */
-        }
-
-        .pricing-container {
-            display: flex;
-            flex-direction: row;  /* Arrange items in a row */
-            flex-wrap: wrap;  /* Allow wrapping to a new row */
-            justify-content: center;  /* Center the items horizontally */
-            gap: 20px;  /* Space between items */
-            max-width: 90%;  /* Limit the container's width */
-            overflow-x: auto;  /* Allow horizontal scrolling */
-        }
-
-        stripe-pricing-table {
-            max-width: 300px;  /* Set the width of each pricing table */
-            max-height: 100%;  /* Prevent overflow vertically */
-        }
-    </style>
 </head>
 <body>
     <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-    
-    <!-- Pricing Tables Container -->
-    <div class="pricing-container">
-        <!-- First row (2 tables) -->
-        <stripe-pricing-table 
-            pricing-table-id="prctbl_1QnnxGGA8ciK0PY2l49qdEdz"
-            publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
-        </stripe-pricing-table>
 
-        <stripe-pricing-table 
-            pricing-table-id="prctbl_1QnoUyGA8ciK0PY2fsxpWJTM"
-            publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
-        </stripe-pricing-table>
-
-        <!-- Second row (4 tables) -->
-        <stripe-pricing-table 
-            pricing-table-id="prctbl_1Qno7yGA8ciK0PY2yfJkiJTM"
-            publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
-        </stripe-pricing-table>
-
-        <stripe-pricing-table 
-            pricing-table-id="prctbl_1Qno2zGA8ciK0PY2yFnpJK0K"
-            publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
-        </stripe-pricing-table>
-
-        <stripe-pricing-table 
-            pricing-table-id="prctbl_1Qno3zGA8ciK0PY2tIkmJB01"
-            publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
-        </stripe-pricing-table>
-
-        <stripe-pricing-table 
-            pricing-table-id="prctbl_1Qno8yGA8ciK0PY2xE3p8JbM"
-            publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
-        </stripe-pricing-table>
-    </div>
+    <stripe-pricing-table 
+        pricing-table-id="prctbl_1QnoUyGA8ciK0PY2fsxpWJTM"
+        publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
+    </stripe-pricing-table>
 </body>
 </html>
