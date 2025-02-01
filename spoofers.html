@@ -4,12 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boltware Checkout</title>
+    <style>
+        /* Ensure the page takes up the full viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Horizontally center */
+            align-items: center; /* Vertically center */
+            background-color: #f4f4f4;
+        }
+
+        /* Rotate the pricing table 90 degrees */
+        stripe-pricing-table {
+            transform: rotate(90deg);
+            transform-origin: center;
+            width: 100vh; /* Use the height of the viewport for width */
+            height: 100vw; /* Use the width of the viewport for height */
+        }
+    </style>
 </head>
 <body>
     <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
 
     <stripe-pricing-table 
-        pricing-table-id="prctbl_1QnoUyGA8ciK0PY2fsxpWJTM"
+        pricing-table-id="prctbl_1QnnxGGA8ciK0PY2l49qdEdz"
         publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
     </stripe-pricing-table>
 </body>
