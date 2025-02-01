@@ -10,24 +10,32 @@
             height: 100%;
             margin: 0;
             display: flex;
-            justify-content: center;  /* Horizontal center */
-            align-items: flex-start;  /* Top alignment */
+            justify-content: center;  /* Centers horizontally */
+            align-items: center;  /* Centers vertically */
             background-color: #f4f4f4;
             overflow: hidden;  /* Prevent scrolling */
         }
 
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
         stripe-pricing-table {
-            max-width: 100%;
-            max-height: 100%;
+            max-width: 100%;  /* Ensures it doesn't overflow horizontally */
         }
     </style>
 </head>
 <body>
-    <!-- Stripe script to load the pricing table -->
-    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-    <stripe-pricing-table 
-        pricing-table-id="prctbl_1QnnxGGA8ciK0PY2l49qdEdz"
-        publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
-    </stripe-pricing-table>
+    <div class="container">
+        <!-- Stripe script to load the pricing table -->
+        <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+        <stripe-pricing-table 
+            pricing-table-id="prctbl_1QnnxGGA8ciK0PY2l49qdEdz"
+            publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
+        </stripe-pricing-table>
+    </div>
 </body>
 </html>
