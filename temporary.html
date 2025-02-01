@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boltware Checkout</title>
+    <style>
+        /* Ensure the page takes up the full viewport and no scrollbars */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;  /* Horizontally centers */
+            align-items: center;  /* Vertically centers */
+            background-color: #f4f4f4;
+            overflow: hidden;  /* Prevent scrolling */
+        }
+
+        stripe-pricing-table {
+            max-width: 100%;  /* Prevent overflow horizontally */
+            max-height: 100%; /* Prevent overflow vertically */
+        }
+    </style>
 </head>
 <body>
     <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
