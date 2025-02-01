@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boltware Checkout</title>
     <style>
-        /* Flexbox to arrange tables horizontally */
+        /* Flexbox to arrange tables horizontally (left to right) */
         body {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: center; /* Centers the items horizontally */
+            align-items: center; /* Centers the items vertically */
             gap: 20px; /* Adds space between the pricing tables */
-            height: 100vh;
-            margin: 0;
+            height: 100vh; /* Ensures the body takes the full height of the screen */
+            margin: 0; /* Removes the default margin */
             background-color: #f4f4f4;
         }
 
-        /* Each table's style */
+        /* Ensure each pricing table has a fixed width and does not overflow */
         stripe-pricing-table {
-            width: 500px; /* Set a fixed width for each pricing table */
-            height: auto;
+            width: 500px; /* Fixed width for each pricing table */
+            height: auto; /* Adjusts the height based on the content */
         }
     </style>
 </head>
