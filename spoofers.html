@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boltware Checkout</title>
     <style>
-        /* Styling to display them side by side */
+        /* Flexbox to arrange tables horizontally */
         body {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 20px; /* Add space between the tables */
+            gap: 20px; /* Adds space between the pricing tables */
             height: 100vh;
             margin: 0;
             background-color: #f4f4f4;
         }
 
+        /* Each table's style */
         stripe-pricing-table {
-            width: 500px; /* Set a fixed width for each table */
+            width: 500px; /* Set a fixed width for each pricing table */
             height: auto;
         }
     </style>
@@ -25,11 +26,13 @@
 <body>
     <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
 
+    <!-- First Stripe Pricing Table -->
     <stripe-pricing-table 
         pricing-table-id="prctbl_1QnoUyGA8ciK0PY2fsxpWJTM"
         publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
     </stripe-pricing-table>
 
+    <!-- Second Stripe Pricing Table -->
     <stripe-pricing-table 
         pricing-table-id="prctbl_1QnnxGGA8ciK0PY2l49qdEdz"
         publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
