@@ -9,16 +9,28 @@
             background-color: #0091ff;
         }
         .pricing-container {
-            padding-top: 150px; /* Adds 150px space above */
+            padding-top: 50vh; /* Default to half the viewport height */
         }
     </style>
 </head>
 <body>
     <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+
     <div class="pricing-container">
         <stripe-pricing-table pricing-table-id="prctbl_1QnnxGGA8ciK0PY2l49qdEdz"
             publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
         </stripe-pricing-table>
     </div>
+
+    <script>
+        function updatePadding() {
+            let halfHeight = window.innerHeight / 2; // Get half of the tab's resolution (height)
+            document.querySelector(".pricing-container").style.paddingTop = halfHeight + "px";
+        }
+
+        // Set padding on load and resize
+        window.onload = updatePadding;
+        window.onresize = updatePadding;
+    </script>
 </body>
 </html>
