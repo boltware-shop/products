@@ -8,30 +8,21 @@
         body {
             background-color: black;
             padding-top: 375px; /* Adjust this value as needed */
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            flex-wrap: wrap;
         }
-        .pricing-container {
+        stripe-pricing-table {
+            display: block;
             background-color: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
         }
     </style>
 </head>
 <body>
-    <div class="pricing-container">
-        <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-        <stripe-pricing-table 
-            pricing-table-id="prctbl_1QnnxGGA8ciK0PY2l49qdEdz"
-            publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
-        </stripe-pricing-table>
-    </div>
+    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+    <stripe-pricing-table 
+        pricing-table-id="prctbl_1QnnxGGA8ciK0PY2l49qdEdz"
+        publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
+    </stripe-pricing-table>
 </body>
 </html>
