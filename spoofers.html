@@ -12,7 +12,22 @@
         body {
             background-color: #0091ff;
             margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            flex-direction: column;
         }
+
+        .favicon {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px; /* Adjust size of the favicon */
+            height: 50px; /* Adjust size of the favicon */
+        }
+
         .pricing-container {
             padding-top: 25vh; /* Default to half the viewport height */
             width: 100%;
@@ -20,6 +35,9 @@
     </style>
 </head>
 <body>
+    <!-- Favicon image at the top center -->
+    <img src="favicon.png" alt="Favicon" class="favicon">
+
     <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
 
     <div class="pricing-container">
