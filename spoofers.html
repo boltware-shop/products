@@ -8,15 +8,17 @@
         body {
             background-color: #0091ff;
         }
-        stripe-pricing-table {
-            margin-top: 150px;
+        .pricing-container {
+            padding-top: 150px; /* Adds 150px space above */
         }
     </style>
 </head>
 <body>
     <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-    <stripe-pricing-table pricing-table-id="prctbl_1QnnxGGA8ciK0PY2l49qdEdz"
-        publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
-    </stripe-pricing-table>
+    <div class="pricing-container">
+        <stripe-pricing-table pricing-table-id="prctbl_1QnnxGGA8ciK0PY2l49qdEdz"
+            publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
+        </stripe-pricing-table>
+    </div>
 </body>
 </html>
