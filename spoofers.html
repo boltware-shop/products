@@ -3,28 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boltware Spoofer</title>
-    <style>
-        body {
-            background-color: black; /* Set background color to black */
-            padding-top: 375px; /* Adjust this value as needed */
-        }
-        stripe-pricing-table {
-            display: block;
-            background-color: transparent; /* Make the background of the pricing table transparent */
-        }
-        stripe-pricing-table::part(product) {
-            background-color: white; /* Set background color to white */
-            border: 2px solid white; /* Add a white border */
-            border-radius: 10px; /* Optional: Add rounded corners */
-            padding: 20px; /* Optional: Add some padding inside the box */
-        }
-    </style>
+    <title>Stripe Pricing Table</title>
 </head>
 <body>
     <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-    <stripe-pricing-table 
-        pricing-table-id="prctbl_1QnnxGGA8ciK0PY2l49qdEdz"
+    <stripe-pricing-table pricing-table-id="prctbl_1QnnxGGA8ciK0PY2l49qdEdz"
         publishable-key="pk_live_51Qnnd8GA8ciK0PY2Y4HkTBY8LAVRHUkitLe6llw09nxcFWetzoEurmiQ3nTjA4YX8LCMVmO7j1FDkhsaSXnHiyC70067K0beVn">
     </stripe-pricing-table>
 </body>
