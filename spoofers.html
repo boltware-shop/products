@@ -7,14 +7,8 @@
     <style>
         body {
             background-color: #0091ff;
-            margin: 0;
-            height: 100vh; /* Ensure body takes up full height */
         }
         .pricing-container {
-            position: absolute; /* Position it absolutely to center */
-            top: 50%; /* Start from the vertical middle */
-            left: 50%; /* Start from the horizontal middle */
-            transform: translate(-50%, -50%); /* Offset by half of the element's height and width */
             padding-top: 50vh; /* Default to half the viewport height */
         }
     </style>
@@ -31,13 +25,7 @@
     <script>
         function updatePadding() {
             let halfHeight = window.innerHeight / 2; // Get half of the tab's resolution (height)
-            let pricingTable = document.querySelector(".pricing-container");
-
-            // Wait for the table to load to get its height
-            setTimeout(() => {
-                let tableHeight = pricingTable.offsetHeight / 2; // Get half of the pricing table height
-                pricingTable.style.paddingTop = (halfHeight - tableHeight) + "px";
-            }, 100);
+            document.querySelector(".pricing-container").style.paddingTop = halfHeight + "px";
         }
 
         // Set padding on load and resize
